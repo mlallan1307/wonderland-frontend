@@ -28,6 +28,9 @@ function NavContent() {
         if (currentPath.indexOf("stake") >= 0 && page === "stake") {
             return true;
         }
+        if (currentPath.indexOf("wrap") >= 0 && page === "wrap") {
+            return true;
+        }
         if (currentPath.indexOf("mints") >= 0 && page === "mints") {
             return true;
         }
@@ -80,6 +83,20 @@ function NavContent() {
                         <div className="dapp-menu-item">
                             <img alt="" src={StakeIcon} />
                             <p>Stake</p>
+                        </div>
+                    </Link>
+
+                    <Link
+                        component={NavLink}
+                        to="/wrap"
+                        isActive={(match: any, location: any) => {
+                            return checkPage(location, "wrap");
+                        }}
+                        className={classnames("button-dapp-menu", { active: isActive })}
+                    >
+                        <div className="dapp-menu-item">
+                            <img alt="" src={StakeIcon} />
+                            <p>Wrap</p>
                         </div>
                     </Link>
 
