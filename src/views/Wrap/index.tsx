@@ -151,17 +151,17 @@ function Wrap() {
                             onChange={handleValueChange}
                             fullWidth
                             type="number"
-                            className="bond-input wrap-input"
+                            className="wrap-card-action-input"
                             startAdornment={
                                 <InputAdornment position="start">
-                                    <div className="wrap-action-input-text">
+                                    <div className="wrap-card-action-input-btn">
                                         <p>{isWrap ? "MEMO" : "wMEMO"}</p>
                                     </div>
                                 </InputAdornment>
                             }
                             endAdornment={
                                 <InputAdornment position="end">
-                                    <div onClick={setMax} className="wrap-action-input-btn">
+                                    <div onClick={setMax} className="wrap-card-action-input-btn">
                                         <p>Max</p>
                                     </div>
                                 </InputAdornment>
@@ -178,10 +178,10 @@ function Wrap() {
                             disabled
                             fullWidth
                             type="number"
-                            className="bond-input wrap-input"
+                            className="wrap-card-action-input"
                             startAdornment={
                                 <InputAdornment position="start">
-                                    <div className="wrap-action-input-text">
+                                    <div className="wrap-card-action-input-btn">
                                         <p>{isWrap ? "wMEMO" : "MEMO"}</p>
                                     </div>
                                 </InputAdornment>
